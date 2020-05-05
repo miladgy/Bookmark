@@ -1,10 +1,10 @@
 ## Simple bookmark made in vanilla JS
 
-## Description
+### Description
 Simply add your url and its name into related fields and watch it being add to the sidebar.
 You can remove the links or close the sidebar if you don't want to see the links
 
-## Drag and Drop (DnD)
+### Drag and Drop (DnD)
 DnD is implemented so you can easily drag and drop links, making the movable and easily sortable.
 
 ### Local Storage
