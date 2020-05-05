@@ -1,0 +1,154 @@
+body {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#mydiv {
+  position: relative;
+  z-index: 9;
+  background-color: #bb6e6e;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196f3;
+  color: #fff;
+}
+.form-error {
+  height: 0px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: rgb(230, 42, 64);
+  -webkit-transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-error-title {
+  display: none;
+}
+
+.form-error-visible {
+  height: 28px;
+}
+
+.form-error-visible .form-error-title {
+  display: initial;
+  margin: 5px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.body-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: space-around;
+  justify-content: center;
+  align-items: start;
+  flex-grow: 1;
+}
+.form-input {
+  border-radius: 2px;
+}
+.submit-form {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.hover-light {
+  -webkit-transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover-dark {
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover-light:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.hover-dark:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  float: left;
+  left: 0;
+  background-color: rgb(255, 206, 210);
+  overflow-x: hidden;
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
+  padding-top: 50px;
+  -webkit-transform: translateX(-250px);
+  transform: translateX(-250px);
+}
+
+.sidebar-visible {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.listed-bookmarks {
+  margin-bottom: 5px;
+  cursor: move;
+}
+.listed-bookmarks.over {
+  border: 2px dashed rgb(226, 135, 178);
+}
+.delete-bookmark {
+  position: absolute;
+  left: 190px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 10;
+}
+.close-sidebar {
+  position: absolute;
+  top: 0;
+  left: 210px;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+.form-footer {
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.form-spacer {
+  flex-grow: 0.5;
+}
+
+.my-sites {
+  text-align: center;
+  color: black;
+}
+
+.delete-bookmark {
+  float: right;
+}

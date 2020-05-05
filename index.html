@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Bookmark</title>
+</head>
+
+<body>
+  <div class="sidebar">
+    <button class="close-sidebar">&#10006</button>
+    <div class="sidebar-list-div">
+      <ul class="sidebar-list">
+      </ul>
+    </div>
+    <div class="form-spacer">
+
+    </div>
+    <div class="form-footer">
+      <div class="github">
+        <a href="https://github.com/miladgy/"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-wrapper">
+    <form id="bookmark-form">
+      <p class="bookmark-form-title">Add new bookmark</p>
+      <div class="input-wrapper">
+        <label for="get-url" class="floating-label">Enter URL:</label>
+        <input class="form-input hover-dark" type="text" id="get-url">
+      </div>
+      <div class="input-wrapper">
+        <label for="get-name" class="floating-label">Enter Bookmark name:</label>
+        <input class="form-input hover-dark" type="text" id="get-name">
+      </div>
+      <button class="submit-form hover-light">add bookmark</button>
+      <div class="form-error">
+      </div>
+    </form>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
